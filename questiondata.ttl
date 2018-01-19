@@ -58,8 +58,8 @@ questiondata:Backup_retention_time_period
   questionnaire:questionHasAnswers bpaas:up_to_1_year ;
   questionnaire:questionHasAnswers bpaas:up_to_2_month ;
   questionnaire:questionHasAnswers bpaas:up_to_2_weeks ;
+  questionnaire:questionHasAnswers bpaas:up_to_6_months ;
   questionnaire:questionHasAnswers bpaas:up_to_7_days ;
-  questionnaire:questionHasAnswers bpaas:up_to_half_year ;
   rdfs:label "Backup retention time period" ;
 .
 questiondata:CloudService_Physical_ID
@@ -189,7 +189,7 @@ questiondata:How_many_times_should_the_process_be_executed
   rdfs:label "How many times should the process be executed?" ;
 .
 questiondata:How_would_you_like_to_store_your_documents
-  rdf:type questionnaire:DataSecurity ;
+  rdf:type questionnaire:Security ;
   rdf:type questionnaire:SingleSelection ;
   questionnaire:questionHasAnnotationRelation bpaas:cloudServiceHasDocumentManagementSystem ;
   questionnaire:questionHasAnswers bpaas:File_System ;
@@ -406,10 +406,10 @@ questiondata:Security
 questiondata:Select_the_category_you_would_like_to_specify
   rdf:type questionnaire:Question ;
   rdf:type questionnaire:SingleSelection ;
-  questionnaire:questionHasDomainAnswer questionnaire:DataSecurity ;
   questionnaire:questionHasDomainAnswer questionnaire:Functional ;
   questionnaire:questionHasDomainAnswer questionnaire:Payment ;
   questionnaire:questionHasDomainAnswer questionnaire:Performance ;
+  questionnaire:questionHasDomainAnswer questionnaire:Security ;
   questionnaire:questionHasDomainAnswer questionnaire:ServiceSupport ;
   questionnaire:questionHasDomainAnswer questionnaire:TargetMarket ;
   rdfs:label "Select the category you would like to specify" ;
@@ -565,13 +565,13 @@ questiondata:What_is_your_favorite_backup_retention_time_period
   questionnaire:questionHasAnswers bpaas:up_to_1_year ;
   questionnaire:questionHasAnswers bpaas:up_to_2_month ;
   questionnaire:questionHasAnswers bpaas:up_to_2_weeks ;
+  questionnaire:questionHasAnswers bpaas:up_to_6_months ;
   questionnaire:questionHasAnswers bpaas:up_to_7_days ;
-  questionnaire:questionHasAnswers bpaas:up_to_half_year ;
   rdfs:label "--What is your favorite backup retention time period?" ;
 .
 questiondata:What_is_your_favorite_data_location
-  rdf:type questionnaire:DataSecurity ;
   rdf:type questionnaire:SearchSelection ;
+  rdf:type questionnaire:Security ;
   questionnaire:searchSelectionHasSearchNamespace bpaas:PhysicalLocation ;
   questionnaire:searchSelectionOnClassesInsteadOfInstances "true"^^xsd:boolean ;
   rdfs:label "What is your favorite data location?" ;
@@ -604,7 +604,7 @@ questiondata:What_is_your_favorite_support_responsiveness
   rdfs:label "What is your favorite support responsiveness?" ;
 .
 questiondata:What_is_your_prefered_data_encryption_level
-  rdf:type questionnaire:DataSecurity ;
+  rdf:type questionnaire:Security ;
   rdf:type questionnaire:SingleSelection ;
   questionnaire:questionHasAnnotationRelation bpaas:cloudServiceHasEncryptionType ;
   questionnaire:questionHasAnswers questiondata:DataEncryptionLevelHigh ;

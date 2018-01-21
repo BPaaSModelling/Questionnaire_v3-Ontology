@@ -1,4 +1,5 @@
 # baseURI: http://ikm-group.ch/archimeo/bpaas
+# imports: http://ikm-group.ch/archiMEO/questionnaire
 # imports: http://ikm-group.ch/archimeo
 # imports: http://ikm-group.ch/archimeo/apqc
 # imports: http://ikm-group.ch/archimeo/bmm
@@ -31,6 +32,7 @@ apqc:AmericanProductivityAndQualityCenter
 .
 <http://ikm-group.ch/archimeo/bpaas>
   rdf:type owl:Ontology ;
+  owl:imports <http://ikm-group.ch/archiMEO/questionnaire> ;
   owl:imports <http://ikm-group.ch/archimeo> ;
   owl:imports <http://ikm-group.ch/archimeo/apqc> ;
   owl:imports <http://ikm-group.ch/archimeo/bmm> ;
@@ -95,11 +97,6 @@ bpaas:BPRhasDowntimePerMonthInMinutes
   rdf:type owl:DatatypeProperty ;
   rdfs:domain bpaas:BusinessProcessRequirement ;
   rdfs:range xsd:integer ;
-.
-bpaas:BPRhasMediaType
-  rdf:type owl:ObjectProperty ;
-  rdfs:domain bpaas:BusinessProcessRequirement ;
-  rdfs:range bpaas:MediaType ;
 .
 bpaas:BPRhasNumberOfProcessExecution
   rdf:type owl:DatatypeProperty ;
@@ -190,6 +187,10 @@ bpaas:CloudService
   rdf:type owl:Class ;
   rdfs:label "CloudService" ;
   rdfs:subClassOf archi:ApplicationService ;
+.
+bpaas:CloudServiceHasMediaType
+  rdf:type owl:ObjectProperty ;
+  rdfs:range bpaas:MediaType ;
 .
 bpaas:ConsultingService
   rdf:type owl:Class ;
@@ -717,6 +718,11 @@ bpaas:StoredData
   rdf:type owl:Class ;
   rdfs:subClassOf archi:DataObject ;
 .
+bpaas:SupportChannel
+  rdf:type owl:Class ;
+  rdfs:label "Support Channel" ;
+  rdfs:subClassOf owl:Thing ;
+.
 bpaas:SupportServiceHasServiceSupportPeriod
   rdf:type owl:ObjectProperty ;
 .
@@ -1046,6 +1052,12 @@ bpaas:cloudServiceHandlesData
   rdfs:domain bpaas:CloudService ;
   rdfs:range archi:DataObject ;
 .
+bpaas:cloudServiceHasAPI
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain bpaas:CloudService ;
+  rdfs:label "Cloud service Has api integration" ;
+  rdfs:range <http://ikm-group.ch/archiMEO/questionnaire#GeneralAnswers> ;
+.
 bpaas:cloudServiceHasAPQC
   rdf:type owl:ObjectProperty ;
   rdfs:domain bpaas:CloudService ;
@@ -1117,6 +1129,12 @@ bpaas:cloudServiceHasBackupRetentionTime
   rdfs:domain bpaas:CloudService ;
   rdfs:label "bpaas:cloudServiceHasBackupRetentionTime" ;
   rdfs:range bpaas:BackupRetentionTime ;
+.
+bpaas:cloudServiceHasDataMigration
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain bpaas:CloudService ;
+  rdfs:label "Cloud service Has data migration can be performed independently from the provider" ;
+  rdfs:range <http://ikm-group.ch/archiMEO/questionnaire#GeneralAnswers> ;
 .
 bpaas:cloudServiceHasDataStorageInGB
   rdf:type owl:DatatypeProperty ;
@@ -1195,6 +1213,12 @@ bpaas:cloudServiceHasStoredDataLocation
   rdfs:domain bpaas:CloudService ;
   rdfs:label "cloudServiceHasStoredDataLocation" ;
   rdfs:range bpaas:PhysicalLocation ;
+.
+bpaas:cloudServiceHasSupportChannel
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain bpaas:CloudService ;
+  rdfs:label "cloud service has support channel" ;
+  rdfs:range bpaas:SupportChannel ;
 .
 bpaas:cloudServiceHasTargetMarket
   rdf:type owl:ObjectProperty ;

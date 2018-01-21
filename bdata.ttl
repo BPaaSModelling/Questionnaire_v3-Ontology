@@ -140,6 +140,10 @@ bdata:InvoiceNinja
   bpaas:cloudServiceHasTargetMarket bpaas:Businesses ;
   rdfs:label "InvoiceNinja" ;
 .
+bdata:Mail
+  rdf:type bpaas:SupportChannel ;
+  rdfs:label "Mail" ;
+.
 bdata:MailJet
   rdf:type bpaas:CloudService ;
   bpaas:cloudServiceHasAPQC <http://ikm-group.ch/archimeo/apqc#9_2_2_2_Generate_customer_billing_data_10795> ;
@@ -249,6 +253,14 @@ bdata:Ninja_email
   bpaas:cloudServiceHasTargetMarket bpaas:Businesses ;
   rdfs:label "Ninja e-mail System" ;
 .
+bdata:OnSiteSupport
+  rdf:type bpaas:SupportChannel ;
+  rdfs:label "On site support" ;
+.
+bdata:OnlineTicketing
+  rdf:type bpaas:SupportChannel ;
+  rdfs:label "Online Ticketing" ;
+.
 bdata:Open_Source_Billing
   rdf:type bpaas:CloudService ;
   bpaas:cloudServiceHasAPQC <http://ikm-group.ch/archimeo/apqc#9_2_2_2_Generate_customer_billing_data_10795> ;
@@ -280,6 +292,14 @@ bdata:Open_Source_Billing
   bpaas:cloudServiceHasTargetMarket bpaas:SmallTeams ;
   rdfs:label "Open Source Billing - Invoicing System" ;
 .
+bdata:Other
+  rdf:type bpaas:SupportChannel ;
+  rdfs:label "Other" ;
+.
+bdata:Phone
+  rdf:type bpaas:SupportChannel ;
+  rdfs:label "Phone" ;
+.
 bdata:Simple_Invoices
   rdf:type bpaas:CloudService ;
   bpaas:cloudServiceHasAPQC <http://ikm-group.ch/archimeo/apqc#9_2_2_2_Generate_customer_billing_data_10795> ;
@@ -307,6 +327,10 @@ bdata:Simple_Invoices
   bpaas:cloudServiceHasStoredDataLocation bpaas:Germany ;
   bpaas:cloudServiceHasTargetMarket bpaas:Businesses ;
   rdfs:label "Simple Invoices - Invoicing System" ;
+.
+bdata:SocialMedia
+  rdf:type bpaas:SupportChannel ;
+  rdfs:label "Social Media" ;
 .
 bdata:SugarCRM
   rdf:type bpaas:CloudService ;

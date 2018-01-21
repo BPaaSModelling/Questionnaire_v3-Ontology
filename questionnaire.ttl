@@ -64,6 +64,11 @@ questionnaire:Functional
   rdfs:label "Functional" ;
   rdfs:subClassOf questionnaire:Question ;
 .
+questionnaire:GeneralAnswers
+  rdf:type owl:Class ;
+  rdfs:label "General questions" ;
+  rdfs:subClassOf questionnaire:Answer ;
+.
 questionnaire:GreaterEqualsThan
   rdf:type questionnaire:Inequality ;
   rdfs:label "greater equals than (>=)" ;
@@ -104,14 +109,17 @@ questionnaire:MultiSelection
   rdfs:label "MultiSelection" ;
   rdfs:subClassOf questionnaire:AnswerType ;
 .
+questionnaire:No
+  rdf:type questionnaire:GeneralAnswers ;
+  rdfs:label "No" ;
+.
 questionnaire:NotEqual
   rdf:type questionnaire:Inequality ;
   rdfs:label "not equal (!=)" ;
 .
-questionnaire:NotSortedYet
-  rdf:type owl:Class ;
-  rdfs:label "NotSortedYet" ;
-  rdfs:subClassOf questionnaire:Question ;
+questionnaire:Not_Specified
+  rdf:type questionnaire:GeneralAnswers ;
+  rdfs:label "Not specified" ;
 .
 questionnaire:Payment
   rdf:type owl:Class ;
@@ -167,6 +175,10 @@ questionnaire:ValueInsert
   rdf:type owl:Class ;
   rdfs:label "Value Insert" ;
   rdfs:subClassOf questionnaire:AnswerType ;
+.
+questionnaire:Yes
+  rdf:type questionnaire:GeneralAnswers ;
+  rdfs:label "Yes" ;
 .
 questionnaire:cloudServiceElementHasCloudServiceDomain
   rdf:type owl:ObjectProperty ;

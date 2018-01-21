@@ -152,6 +152,7 @@ questiondata:Do_not_care
 questiondata:Do_you_need_API_integration
   rdf:type questionnaire:Interoperability ;
   rdf:type questionnaire:SingleSelection ;
+  questionnaire:questionHasAnnotationRelation bpaas:cloudServiceHasAPI ;
   questionnaire:questionHasAnswers questionnaire:No ;
   questionnaire:questionHasAnswers questionnaire:Yes ;
   rdfs:label "Do you need API integration?" ;
@@ -377,6 +378,13 @@ questiondata:PreferedAuditLogRetentionPeriodinMonths
   questionnaire:questionHasAnnotationRelation bpaas:cloudServiceHasAuditLogRetentionPolicies ;
   questionnaire:valueInsertAnswerTypeHasDatatype xsd:integer ;
   rdfs:label "Prefered Audit Log Retention Period (in Months)?" ;
+.
+questiondata:PreferedAvailability_in_percentage
+  rdf:type questionnaire:Availability ;
+  rdf:type questionnaire:ValueInsert ;
+  questionnaire:questionHasAnnotationRelation bpaas:cloudServiceHasAvailabilityInPercent ;
+  questionnaire:valueInsertAnswerTypeHasDatatype xsd:integer ;
+  rdfs:label "Prefered availability in percentage?" ;
 .
 questiondata:Prefered_Data_Storage_in_GB
   rdf:type questionnaire:Performance ;
@@ -755,6 +763,7 @@ questiondata:Which_Object_does_reflect_the_functional_requirement_you_want_to_ex
 questiondata:Would_a_computing_processing_power_scalable_be_required
   rdf:type questionnaire:Performance ;
   rdf:type questionnaire:SingleSelection ;
+  questionnaire:questionHasAnnotationRelation bpaas:cloudServiceHasScalableProcessingPower ;
   questionnaire:questionHasAnswers questionnaire:No ;
   questionnaire:questionHasAnswers questionnaire:Yes ;
   rdfs:label "Would a computing processing power scalable be required?" ;
@@ -762,6 +771,7 @@ questiondata:Would_a_computing_processing_power_scalable_be_required
 questiondata:Would_a_data_storage_scalable_be_required
   rdf:type questionnaire:Performance ;
   rdf:type questionnaire:SingleSelection ;
+  questionnaire:questionHasAnnotationRelation bpaas:cloudServiceHasScalableStorage ;
   questionnaire:questionHasAnswers questionnaire:No ;
   questionnaire:questionHasAnswers questionnaire:Yes ;
   rdfs:label "Would a scalable data storage be required?" ;
@@ -769,6 +779,7 @@ questiondata:Would_a_data_storage_scalable_be_required
 questiondata:Would_an_automatic_password_management_in_place_be_required
   rdf:type questionnaire:Security ;
   rdf:type questionnaire:SingleSelection ;
+  questionnaire:questionHasAnnotationRelation bpaas:cloudServiceHasAutomatedPasswordManagement ;
   questionnaire:questionHasAnswers questionnaire:No ;
   questionnaire:questionHasAnswers questionnaire:Not_Specified ;
   questionnaire:questionHasAnswers questionnaire:Yes ;

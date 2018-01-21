@@ -1105,6 +1105,12 @@ bpaas:cloudServiceHasAuditLogRetentionPolicies
   rdfs:label "cloud service has audit log retention policies" ;
   rdfs:range bpaas:LogFileRetentionPolicy ;
 .
+bpaas:cloudServiceHasAutomatedPasswordManagement
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain bpaas:CloudService ;
+  rdfs:label "Cloud service Has Automated Password Management system" ;
+  rdfs:range <http://ikm-group.ch/archiMEO/questionnaire#GeneralAnswers> ;
+.
 bpaas:cloudServiceHasAvailabilityInPercent
   rdf:type owl:DatatypeProperty ;
   rdfs:domain bpaas:CloudService ;
@@ -1191,6 +1197,18 @@ bpaas:cloudServiceHasResponseTime_in_ms
   rdf:type owl:DatatypeProperty ;
   rdfs:domain bpaas:CloudService ;
   rdfs:range xsd:integer ;
+.
+bpaas:cloudServiceHasScalableProcessingPower
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain bpaas:CloudService ;
+  rdfs:label "Cloud service Has scalable ProcessingPower" ;
+  rdfs:range <http://ikm-group.ch/archiMEO/questionnaire#GeneralAnswers> ;
+.
+bpaas:cloudServiceHasScalableStorage
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain bpaas:CloudService ;
+  rdfs:label "Cloud service Has Scalable Storage" ;
+  rdfs:range <http://ikm-group.ch/archiMEO/questionnaire#GeneralAnswers> ;
 .
 bpaas:cloudServiceHasServiceSupport
   rdf:type owl:ObjectProperty ;

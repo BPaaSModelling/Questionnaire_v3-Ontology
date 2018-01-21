@@ -188,8 +188,9 @@ bpaas:CloudService
   rdfs:label "CloudService" ;
   rdfs:subClassOf archi:ApplicationService ;
 .
-bpaas:CloudServiceHasMediaType
+bpaas:CloudServiceHasMediaTypeImportExport
   rdf:type owl:ObjectProperty ;
+  rdfs:domain bpaas:CloudService ;
   rdfs:range bpaas:MediaType ;
 .
 bpaas:ConsultingService

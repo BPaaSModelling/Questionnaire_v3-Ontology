@@ -487,7 +487,7 @@ questiondata:Select_the_desired_Service_Support_Responsiveness
 questiondata:Select_the_prefered_data_type_for_import_and_export
   rdf:type questionnaire:Interoperability ;
   rdf:type questionnaire:MultiSelection ;
-  questionnaire:questionHasAnnotationRelation bpaas:CloudServiceHasMediaType ;
+  questionnaire:questionHasAnnotationRelation bpaas:CloudServiceHasMediaTypeImportExport ;
   questionnaire:questionHasAnswers bpaas:Video_mp4 ;
   questionnaire:questionHasAnswers bpaas:csv ;
   questionnaire:questionHasAnswers bpaas:mp3 ;
@@ -797,6 +797,6 @@ questionnaire:PerformanceYes
   rdf:type questionnaire:Answer ;
   rdfs:label "Yes" ;
 .
-bpaas:CloudServiceHasMediaType
+bpaas:CloudServiceHasMediaTypeImportExport
   rdfs:domain bpaas:CloudService ;
 .

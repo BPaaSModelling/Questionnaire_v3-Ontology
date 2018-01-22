@@ -153,7 +153,7 @@ questionnaire:SearchSelection
 .
 questionnaire:Security
   rdf:type owl:Class ;
-  rdfs:label "Data Security" ;
+  rdfs:label "Security" ;
   rdfs:subClassOf questionnaire:Question ;
 .
 questionnaire:ServiceSupport

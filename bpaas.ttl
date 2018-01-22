@@ -60,10 +60,6 @@ bpaas:ApplicationActivity
   rdfs:label "ApplicationActivity" ;
   rdfs:subClassOf archi:ApplicationService ;
 .
-bpaas:Archive_the_log_when_full
-  rdf:type bpaas:LogFileRetentionPolicy ;
-  rdfs:label "Archive the log when full" ;
-.
 bpaas:ArchivedData
   rdf:type owl:Class ;
   rdfs:subClassOf archi:DataObject ;
@@ -232,10 +228,6 @@ bpaas:Development_Agencies
 bpaas:Differential
   rdf:type bpaas:BackupManagement ;
 .
-bpaas:Do_not_overwrite_events
-  rdf:type bpaas:LogFileRetentionPolicy ;
-  rdfs:label "do not overwrite events" ;
-.
 bpaas:DocumentManagementSystem
   rdf:type owl:Class ;
   rdfs:label "cs a" ;
@@ -376,11 +368,6 @@ bpaas:LogFile
   rdfs:label "Log file" ;
   rdfs:subClassOf archi:DataObject ;
 .
-bpaas:LogFileRetentionPolicy
-  rdf:type owl:Class ;
-  rdfs:label "Log file retention policy" ;
-  rdfs:subClassOf bmm:BusinessPolicy ;
-.
 bpaas:Logging
   rdf:type owl:Class ;
   rdfs:label "Logging" ;
@@ -465,10 +452,6 @@ bpaas:Not_specifiedPayment
 .
 bpaas:One-timePasswordDevice
   rdf:type bpaas:Authentication ;
-.
-bpaas:Overwrite_events_as_needed
-  rdf:type bpaas:LogFileRetentionPolicy ;
-  rdfs:label "Overwrite events as needed" ;
 .
 bpaas:PCI_DSS
   rdf:type bpaas:EncryptionType ;
@@ -715,7 +698,7 @@ bpaas:Storage_Service
   rdf:type bpaas:DocumentManagementSystem ;
   rdfs:label "Storage Service" ;
 .
-bpaas:StoredData
+bpaas:StoredDataLocation
   rdf:type owl:Class ;
   rdfs:subClassOf archi:DataObject ;
 .
@@ -1048,11 +1031,6 @@ bpaas:cloudConsumerIsPartOfTargetMarket
   rdfs:domain bpaas:CloudConsumer ;
   rdfs:range bpaas:TargetMarket ;
 .
-bpaas:cloudServiceHandlesData
-  rdf:type owl:ObjectProperty ;
-  rdfs:domain bpaas:CloudService ;
-  rdfs:range archi:DataObject ;
-.
 bpaas:cloudServiceHasAPI
   rdf:type owl:ObjectProperty ;
   rdfs:domain bpaas:CloudService ;
@@ -1076,12 +1054,6 @@ bpaas:cloudServiceHasAccessLogRetentionPeriodInMonths
   rdfs:label "cloud service has access log retention period in months" ;
   rdfs:range xsd:integer ;
 .
-bpaas:cloudServiceHasAccessLogRetentionPolicies
-  rdf:type owl:ObjectProperty ;
-  rdfs:domain bpaas:CloudService ;
-  rdfs:label "cloud service has access log retention policies" ;
-  rdfs:range bpaas:LogFileRetentionPolicy ;
-.
 bpaas:cloudServiceHasAction
   rdf:type owl:ObjectProperty ;
   rdfs:domain bpaas:CloudService ;
@@ -1094,17 +1066,11 @@ bpaas:cloudServiceHasAuditLogAvailabilityInMonth
   rdfs:label "cloudServiceHasAuditLogAvailabilityInMonth" ;
   rdfs:range xsd:integer ;
 .
-bpaas:cloudServiceHasAuditLogRetentionPeriodInMonths
+bpaas:cloudServiceHasAuditLogRetentionAvailabilityInMonth
   rdf:type owl:DatatypeProperty ;
   rdfs:domain bpaas:CloudService ;
-  rdfs:label "cloud service has audit log retention period in months" ;
+  rdfs:label "cloudServiceHasAuditLogRetentionAvailabilityInMonth" ;
   rdfs:range xsd:integer ;
-.
-bpaas:cloudServiceHasAuditLogRetentionPolicies
-  rdf:type owl:ObjectProperty ;
-  rdfs:domain bpaas:CloudService ;
-  rdfs:label "cloud service has audit log retention policies" ;
-  rdfs:range bpaas:LogFileRetentionPolicy ;
 .
 bpaas:cloudServiceHasAutomatedPasswordManagement
   rdf:type owl:ObjectProperty ;
@@ -1124,12 +1090,6 @@ bpaas:cloudServiceHasBackupFrequency
   rdfs:domain bpaas:CloudService ;
   rdfs:label "Backup Frequency" ;
   rdfs:range bpaas:BackupFrequency ;
-.
-bpaas:cloudServiceHasBackupRestoreInGBPerHour
-  rdf:type owl:DatatypeProperty ;
-  rdfs:domain bpaas:CloudService ;
-  rdfs:label "cloudServiceHasBackupRestoreInGBPerHour" ;
-  rdfs:range xsd:integer ;
 .
 bpaas:cloudServiceHasBackupRetentionTime
   rdf:type owl:ObjectProperty ;
@@ -1156,21 +1116,10 @@ bpaas:cloudServiceHasDescription
   rdfs:label "cloudServiceHasDescription" ;
   rdfs:range xsd:string ;
 .
-bpaas:cloudServiceHasDocumentManagementSystem
-  rdf:type owl:ObjectProperty ;
-  rdfs:domain bpaas:CloudService ;
-  rdfs:range bpaas:DocumentManagementSystem ;
-.
 bpaas:cloudServiceHasEncryptionType
   rdf:type owl:ObjectProperty ;
   rdfs:domain bpaas:CloudService ;
   rdfs:range bpaas:EncryptionType ;
-.
-bpaas:cloudServiceHasExecutionCapacity
-  rdf:type rdf:Property ;
-  rdfs:domain bpaas:CloudService ;
-  rdfs:label "cloudServiceHasExecutionCapacity" ;
-  rdfs:range xsd:integer ;
 .
 bpaas:cloudServiceHasObject
   rdf:type owl:ObjectProperty ;
@@ -1187,12 +1136,6 @@ bpaas:cloudServiceHasPhysicalID
   rdf:type owl:DatatypeProperty ;
   rdfs:domain bpaas:CloudService ;
   rdfs:range xsd:string ;
-.
-bpaas:cloudServiceHasProcessedDataLocation
-  rdf:type owl:ObjectProperty ;
-  rdfs:domain bpaas:CloudService ;
-  rdfs:label "cloudServiceHasProcessedDataLocation" ;
-  rdfs:range bpaas:PhysicalLocation ;
 .
 bpaas:cloudServiceHasResponseTime_in_ms
   rdf:type owl:DatatypeProperty ;
@@ -1231,7 +1174,6 @@ bpaas:cloudServiceHasStoredDataLocation
   rdf:type owl:ObjectProperty ;
   rdfs:domain bpaas:CloudService ;
   rdfs:label "cloudServiceHasStoredDataLocation" ;
-  rdfs:range bpaas:PhysicalLocation ;
 .
 bpaas:cloudServiceHasSupportChannel
   rdf:type owl:ObjectProperty ;

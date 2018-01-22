@@ -10,6 +10,29 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
+<http://ikm-group.ch/archiMEO/bdata#Drive_1>
+  bpaas:cloudServiceHasStoredDataLocation <http://ikm-group.ch/archiMEO/bdata#Africa> ;
+  bpaas:cloudServiceHasStoredDataLocation <http://ikm-group.ch/archiMEO/bdata#Asia> ;
+  bpaas:cloudServiceHasStoredDataLocation <http://ikm-group.ch/archiMEO/bdata#Austria> ;
+  bpaas:cloudServiceHasStoredDataLocation <http://ikm-group.ch/archiMEO/bdata#Brazil> ;
+  bpaas:cloudServiceHasStoredDataLocation <http://ikm-group.ch/archiMEO/bdata#China> ;
+  bpaas:cloudServiceHasStoredDataLocation <http://ikm-group.ch/archiMEO/bdata#EES> ;
+  bpaas:cloudServiceHasStoredDataLocation <http://ikm-group.ch/archiMEO/bdata#EU-US_Privacy_Shield_agreement_locations> ;
+  bpaas:cloudServiceHasStoredDataLocation <http://ikm-group.ch/archiMEO/bdata#Europe> ;
+  bpaas:cloudServiceHasStoredDataLocation <http://ikm-group.ch/archiMEO/bdata#European_Economic_Area_EEA> ;
+  bpaas:cloudServiceHasStoredDataLocation <http://ikm-group.ch/archiMEO/bdata#European_Union> ;
+  bpaas:cloudServiceHasStoredDataLocation <http://ikm-group.ch/archiMEO/bdata#French> ;
+  bpaas:cloudServiceHasStoredDataLocation <http://ikm-group.ch/archiMEO/bdata#Germany> ;
+  bpaas:cloudServiceHasStoredDataLocation <http://ikm-group.ch/archiMEO/bdata#Israel> ;
+  bpaas:cloudServiceHasStoredDataLocation <http://ikm-group.ch/archiMEO/bdata#Italy> ;
+  bpaas:cloudServiceHasStoredDataLocation <http://ikm-group.ch/archiMEO/bdata#North_America> ;
+  bpaas:cloudServiceHasStoredDataLocation <http://ikm-group.ch/archiMEO/bdata#Romania> ;
+  bpaas:cloudServiceHasStoredDataLocation <http://ikm-group.ch/archiMEO/bdata#South_America> ;
+  bpaas:cloudServiceHasStoredDataLocation <http://ikm-group.ch/archiMEO/bdata#Switzerland> ;
+  bpaas:cloudServiceHasStoredDataLocation <http://ikm-group.ch/archiMEO/bdata#The_Netherlands> ;
+  bpaas:cloudServiceHasStoredDataLocation <http://ikm-group.ch/archiMEO/bdata#USA> ;
+  bpaas:cloudServiceHasStoredDataLocation <http://ikm-group.ch/archiMEO/bdata#United_Kingdom> ;
+.
 <http://ikm-group.ch/archiMEO/questiondata>
   rdf:type owl:Ontology ;
   owl:imports <http://ikm-group.ch/archiMEO/questionnaire> ;
@@ -210,7 +233,7 @@ questiondata:How_many_simultaneous_users_do_you_prefer
   rdf:type questionnaire:ValueInsert ;
   questionnaire:questionHasAnnotationRelation bpaas:cloudServiceHasSimultaneousUsers ;
   questionnaire:valueInsertAnswerTypeHasDatatype xsd:integer ;
-  rdfs:label "How many simultaneous users do you prefer?" ;
+  rdfs:label "How many simultaneous users do you prefer? (Insert 0 for any value)" ;
 .
 questiondata:LogAccessFor1Month
   rdf:type questionnaire:Answer ;
@@ -356,42 +379,42 @@ questiondata:PreferedAccess_Log_Availability_in_Months
   rdf:type questionnaire:ValueInsert ;
   questionnaire:questionHasAnnotationRelation bpaas:cloudServiceHasAccessLogAvailabilityInMonths ;
   questionnaire:valueInsertAnswerTypeHasDatatype xsd:integer ;
-  rdfs:label "Prefered Access Log Availability (in Months)" ;
+  rdfs:label "Prefered Access Log Availability (in Months) (Insert 0 for any value)" ;
 .
 questiondata:PreferedAccess_Log_Retention_Period_in_Months
   rdf:type questionnaire:Availability ;
   rdf:type questionnaire:ValueInsert ;
   questionnaire:questionHasAnnotationRelation bpaas:cloudServiceHasAccessLogRetentionPeriodInMonths ;
   questionnaire:valueInsertAnswerTypeHasDatatype xsd:integer ;
-  rdfs:label "Prefered Access Log Retention Period in Months" ;
+  rdfs:label "Prefered Access Log Retention Period in Months? (Insert 0 for any value)" ;
 .
 questiondata:PreferedAuditLogAvailabilityInMonths
   rdf:type questionnaire:Availability ;
   rdf:type questionnaire:ValueInsert ;
   questionnaire:questionHasAnnotationRelation bpaas:cloudServiceHasAuditLogAvailabilityInMonth ;
   questionnaire:valueInsertAnswerTypeHasDatatype xsd:integer ;
-  rdfs:label "Prefered Audit Log Availability In Months?" ;
+  rdfs:label "Prefered Audit Log Availability In Months? (Insert 0 for any value)" ;
 .
 questiondata:PreferedAuditLogRetentionPeriodinMonths
   rdf:type questionnaire:Availability ;
   rdf:type questionnaire:ValueInsert ;
-  questionnaire:questionHasAnnotationRelation bpaas:cloudServiceHasAuditLogRetentionPolicies ;
+  questionnaire:questionHasAnnotationRelation bpaas:cloudServiceHasAuditLogRetentionAvailabilityInMonth ;
   questionnaire:valueInsertAnswerTypeHasDatatype xsd:integer ;
-  rdfs:label "Prefered Audit Log Retention Period (in Months)?" ;
+  rdfs:label "Prefered Audit Log Retention Period (in Months)? (Insert 0 for any value)" ;
 .
 questiondata:PreferedAvailability_in_percentage
   rdf:type questionnaire:Availability ;
   rdf:type questionnaire:ValueInsert ;
   questionnaire:questionHasAnnotationRelation bpaas:cloudServiceHasAvailabilityInPercent ;
   questionnaire:valueInsertAnswerTypeHasDatatype xsd:integer ;
-  rdfs:label "Prefered availability in percentage?" ;
+  rdfs:label "Prefered availability in percentage? (Insert 0 for any value)" ;
 .
 questiondata:Prefered_Data_Storage_in_GB
   rdf:type questionnaire:Performance ;
   rdf:type questionnaire:ValueInsert ;
   questionnaire:questionHasAnnotationRelation bpaas:cloudServiceHasDataStorageInGB ;
   questionnaire:valueInsertAnswerTypeHasDatatype xsd:integer ;
-  rdfs:label "Select the prefered Data Storage in GB" ;
+  rdfs:label "Select the prefered Data Storage in GB (Insert 0 for any value)" ;
 .
 questiondata:ProcessExecutionOnADailyBasis
   rdf:type questionnaire:Answer ;
@@ -699,19 +722,37 @@ questiondata:What_is_your_favorite_backup_retention_time_period
 .
 questiondata:What_is_your_favorite_response_time_level
   rdf:type questionnaire:Performance ;
-  rdf:type questionnaire:SingleSelection ;
+  rdf:type questionnaire:ValueInsert ;
   questionnaire:questionHasAnnotationRelation bpaas:cloudServiceHasResponseTime_in_ms ;
-  questionnaire:questionHasAnswers questiondata:ResponseTime_High ;
-  questionnaire:questionHasAnswers questiondata:ResponseTime_Low ;
-  questionnaire:questionHasAnswers questiondata:ResponseTime_Medium ;
-  rdfs:label "What is your favorite response time level?" ;
+  questionnaire:valueInsertAnswerTypeHasDatatype xsd:integer ;
+  rdfs:label "What is your favorite response time level? (Insert 0 for any value)" ;
 .
 questiondata:What_is_your_favorite_stored_data_location
-  rdf:type questionnaire:SearchSelection ;
+  rdf:type questionnaire:MultiSelection ;
   rdf:type questionnaire:Security ;
   questionnaire:questionHasAnnotationRelation bpaas:cloudServiceHasStoredDataLocation ;
-  questionnaire:searchSelectionHasSearchNamespace bpaas:PhysicalLocation ;
-  questionnaire:searchSelectionOnClassesInsteadOfInstances "true"^^xsd:boolean ;
+  questionnaire:questionHasAnswers <http://ikm-group.ch/archiMEO/bdata#Africa> ;
+  questionnaire:questionHasAnswers <http://ikm-group.ch/archiMEO/bdata#Asia> ;
+  questionnaire:questionHasAnswers <http://ikm-group.ch/archiMEO/bdata#Austria> ;
+  questionnaire:questionHasAnswers <http://ikm-group.ch/archiMEO/bdata#Brazil> ;
+  questionnaire:questionHasAnswers <http://ikm-group.ch/archiMEO/bdata#China> ;
+  questionnaire:questionHasAnswers <http://ikm-group.ch/archiMEO/bdata#EES> ;
+  questionnaire:questionHasAnswers <http://ikm-group.ch/archiMEO/bdata#EU-US_Privacy_Shield_agreement_locations> ;
+  questionnaire:questionHasAnswers <http://ikm-group.ch/archiMEO/bdata#Europe> ;
+  questionnaire:questionHasAnswers <http://ikm-group.ch/archiMEO/bdata#European_Economic_Area_EEA> ;
+  questionnaire:questionHasAnswers <http://ikm-group.ch/archiMEO/bdata#European_Union> ;
+  questionnaire:questionHasAnswers <http://ikm-group.ch/archiMEO/bdata#French> ;
+  questionnaire:questionHasAnswers <http://ikm-group.ch/archiMEO/bdata#Germany> ;
+  questionnaire:questionHasAnswers <http://ikm-group.ch/archiMEO/bdata#Israel> ;
+  questionnaire:questionHasAnswers <http://ikm-group.ch/archiMEO/bdata#Italy> ;
+  questionnaire:questionHasAnswers <http://ikm-group.ch/archiMEO/bdata#North_America> ;
+  questionnaire:questionHasAnswers <http://ikm-group.ch/archiMEO/bdata#Romania> ;
+  questionnaire:questionHasAnswers <http://ikm-group.ch/archiMEO/bdata#South_America> ;
+  questionnaire:questionHasAnswers <http://ikm-group.ch/archiMEO/bdata#Switzerland> ;
+  questionnaire:questionHasAnswers <http://ikm-group.ch/archiMEO/bdata#The_Netherlands> ;
+  questionnaire:questionHasAnswers <http://ikm-group.ch/archiMEO/bdata#USA> ;
+  questionnaire:questionHasAnswers <http://ikm-group.ch/archiMEO/bdata#United_Kingdom> ;
+  questionnaire:questionHasAnswers questionnaire:Not_Specified ;
   rdfs:label "What is your favorite stored data location?" ;
 .
 questiondata:What_is_your_favorite_support_coverage

@@ -644,12 +644,12 @@ questiondata:What_are_the_offered_support_channels
   rdf:type questionnaire:MultiSelection ;
   rdf:type questionnaire:ServiceSupport ;
   questionnaire:questionHasAnnotationRelation bpaas:cloudServiceHasSupportChannel ;
-  questionnaire:questionHasAnswers <http://ikm-group.ch/archiMEO/bdata#Mail> ;
-  questionnaire:questionHasAnswers <http://ikm-group.ch/archiMEO/bdata#OnSiteSupport> ;
-  questionnaire:questionHasAnswers <http://ikm-group.ch/archiMEO/bdata#OnlineTicketing> ;
-  questionnaire:questionHasAnswers <http://ikm-group.ch/archiMEO/bdata#Other> ;
-  questionnaire:questionHasAnswers <http://ikm-group.ch/archiMEO/bdata#Phone> ;
-  questionnaire:questionHasAnswers <http://ikm-group.ch/archiMEO/bdata#SocialMedia> ;
+  questionnaire:questionHasAnswers bpaas:Mail ;
+  questionnaire:questionHasAnswers bpaas:OnSiteSupport ;
+  questionnaire:questionHasAnswers bpaas:OnlineTicketing ;
+  questionnaire:questionHasAnswers bpaas:Other ;
+  questionnaire:questionHasAnswers bpaas:Phone ;
+  questionnaire:questionHasAnswers bpaas:SocialMedia ;
   rdfs:label "What are the offered support channels" ;
 .
 questiondata:What_could_be_uploaded
@@ -731,28 +731,28 @@ questiondata:What_is_your_favorite_stored_data_location
   rdf:type questionnaire:MultiSelection ;
   rdf:type questionnaire:Security ;
   questionnaire:questionHasAnnotationRelation bpaas:cloudServiceHasStoredDataLocation ;
-  questionnaire:questionHasAnswers <http://ikm-group.ch/archiMEO/bdata#Africa> ;
-  questionnaire:questionHasAnswers <http://ikm-group.ch/archiMEO/bdata#Asia> ;
-  questionnaire:questionHasAnswers <http://ikm-group.ch/archiMEO/bdata#Austria> ;
-  questionnaire:questionHasAnswers <http://ikm-group.ch/archiMEO/bdata#Brazil> ;
-  questionnaire:questionHasAnswers <http://ikm-group.ch/archiMEO/bdata#China> ;
-  questionnaire:questionHasAnswers <http://ikm-group.ch/archiMEO/bdata#EES> ;
-  questionnaire:questionHasAnswers <http://ikm-group.ch/archiMEO/bdata#EU-US_Privacy_Shield_agreement_locations> ;
-  questionnaire:questionHasAnswers <http://ikm-group.ch/archiMEO/bdata#Europe> ;
-  questionnaire:questionHasAnswers <http://ikm-group.ch/archiMEO/bdata#European_Economic_Area_EEA> ;
-  questionnaire:questionHasAnswers <http://ikm-group.ch/archiMEO/bdata#European_Union> ;
-  questionnaire:questionHasAnswers <http://ikm-group.ch/archiMEO/bdata#French> ;
-  questionnaire:questionHasAnswers <http://ikm-group.ch/archiMEO/bdata#Germany> ;
-  questionnaire:questionHasAnswers <http://ikm-group.ch/archiMEO/bdata#Israel> ;
-  questionnaire:questionHasAnswers <http://ikm-group.ch/archiMEO/bdata#Italy> ;
-  questionnaire:questionHasAnswers <http://ikm-group.ch/archiMEO/bdata#North_America> ;
-  questionnaire:questionHasAnswers <http://ikm-group.ch/archiMEO/bdata#Romania> ;
-  questionnaire:questionHasAnswers <http://ikm-group.ch/archiMEO/bdata#South_America> ;
-  questionnaire:questionHasAnswers <http://ikm-group.ch/archiMEO/bdata#Switzerland> ;
-  questionnaire:questionHasAnswers <http://ikm-group.ch/archiMEO/bdata#The_Netherlands> ;
-  questionnaire:questionHasAnswers <http://ikm-group.ch/archiMEO/bdata#USA> ;
-  questionnaire:questionHasAnswers <http://ikm-group.ch/archiMEO/bdata#United_Kingdom> ;
   questionnaire:questionHasAnswers questionnaire:Not_Specified ;
+  questionnaire:questionHasAnswers bpaas:Africa ;
+  questionnaire:questionHasAnswers bpaas:Asia ;
+  questionnaire:questionHasAnswers bpaas:Austria ;
+  questionnaire:questionHasAnswers bpaas:Brazil ;
+  questionnaire:questionHasAnswers bpaas:China ;
+  questionnaire:questionHasAnswers bpaas:EES ;
+  questionnaire:questionHasAnswers bpaas:EU-US_Privacy_Shield_agreement_locations ;
+  questionnaire:questionHasAnswers bpaas:Europe ;
+  questionnaire:questionHasAnswers bpaas:European_Economic_Area_EEA ;
+  questionnaire:questionHasAnswers bpaas:European_Union ;
+  questionnaire:questionHasAnswers bpaas:French ;
+  questionnaire:questionHasAnswers bpaas:Germany ;
+  questionnaire:questionHasAnswers bpaas:Israel ;
+  questionnaire:questionHasAnswers bpaas:Italy ;
+  questionnaire:questionHasAnswers bpaas:North_America ;
+  questionnaire:questionHasAnswers bpaas:Romania ;
+  questionnaire:questionHasAnswers bpaas:South_America ;
+  questionnaire:questionHasAnswers bpaas:Switzerland ;
+  questionnaire:questionHasAnswers bpaas:The_Netherlands ;
+  questionnaire:questionHasAnswers bpaas:USA ;
+  questionnaire:questionHasAnswers bpaas:United_Kingdom ;
   rdfs:label "What is your favorite stored data location?" ;
 .
 questiondata:What_is_your_favorite_support_coverage

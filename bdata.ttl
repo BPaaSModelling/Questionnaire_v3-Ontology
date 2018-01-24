@@ -17,26 +17,6 @@
   owl:imports <http://ikm-group.ch/archimeo/bpaas> ;
   owl:versionInfo "Created with TopBraid Composer" ;
 .
-bdata:Africa
-  rdf:type bpaas:StoredDataLocation ;
-  rdfs:label "Africa" ;
-.
-bdata:Asia
-  rdf:type bpaas:StoredDataLocation ;
-  rdfs:label "Asia" ;
-.
-bdata:Austria
-  rdf:type bpaas:StoredDataLocation ;
-  rdfs:label "Austria" ;
-.
-bdata:Brazil
-  rdf:type bpaas:StoredDataLocation ;
-  rdfs:label "Brazil" ;
-.
-bdata:China
-  rdf:type bpaas:StoredDataLocation ;
-  rdfs:label "China" ;
-.
 bdata:Drive
   rdf:type bpaas:CloudService ;
   bpaas:cloudServiceHasAPQC <http://ikm-group.ch/archimeo/apqc#9_11_7_Document_trade_14095> ;
@@ -234,34 +214,6 @@ bdata:Dropbox
   bpaas:cloudServiceHasTargetMarket bpaas:SmallTeams ;
   rdfs:label "Dropbox" ;
 .
-bdata:EES
-  rdf:type bpaas:StoredDataLocation ;
-  rdfs:label "EES" ;
-.
-bdata:EU-US_Privacy_Shield_agreement_locations
-  rdf:type bpaas:StoredDataLocation ;
-  rdfs:label "EU-US Privacy Shield agreement locations" ;
-.
-bdata:Europe
-  rdf:type bpaas:StoredDataLocation ;
-  rdfs:label "Europe" ;
-.
-bdata:European_Economic_Area_EEA
-  rdf:type bpaas:StoredDataLocation ;
-  rdfs:label " European Economic Area (EEA)" ;
-.
-bdata:European_Union
-  rdf:type bpaas:StoredDataLocation ;
-  rdfs:label "European Union" ;
-.
-bdata:French
-  rdf:type bpaas:StoredDataLocation ;
-  rdfs:label "French" ;
-.
-bdata:Germany
-  rdf:type bpaas:StoredDataLocation ;
-  rdfs:label "Germany" ;
-.
 bdata:Gmail
   rdf:type bpaas:CloudService ;
   bpaas:cloudServiceHasAPQC <http://ikm-group.ch/archimeo/apqc#9_2_2_3_Transmit_billing_data_to_customers_10796> ;
@@ -279,7 +231,6 @@ bdata:Gmail
   bpaas:cloudServiceHasServiceSupport bpaas:Twenty4Seven ;
   bpaas:cloudServiceHasServiceSupportResponsiveness bpaas:at_most_1_working_day ;
   bpaas:cloudServiceHasSimultaneousUsers 100 ;
-  bpaas:cloudServiceHasStoredDataLocation bpaas:USA ;
   bpaas:cloudServiceHasTargetMarket bpaas:Businesses ;
   bpaas:cloudServiceHasTargetMarket bpaas:GrowingTeams ;
   bpaas:cloudServiceHasTargetMarket bpaas:Individuals ;
@@ -313,7 +264,6 @@ bdata:Gmail_1
   bpaas:cloudServiceHasServiceSupport bpaas:Twenty4Seven ;
   bpaas:cloudServiceHasServiceSupportResponsiveness bpaas:at_most_1_working_day ;
   bpaas:cloudServiceHasSimultaneousUsers 100 ;
-  bpaas:cloudServiceHasStoredDataLocation bpaas:USA ;
   bpaas:cloudServiceHasSupportChannel bdata:Mail ;
   bpaas:cloudServiceHasSupportChannel bdata:OnSiteSupport ;
   bpaas:cloudServiceHasSupportChannel bdata:OnlineTicketing ;
@@ -354,18 +304,6 @@ bdata:InvoiceNinja
   bpaas:cloudServiceHasTargetMarket bpaas:Businesses ;
   rdfs:label "InvoiceNinja" ;
 .
-bdata:Israel
-  rdf:type bpaas:StoredDataLocation ;
-  rdfs:label "Israel" ;
-.
-bdata:Italy
-  rdf:type bpaas:StoredDataLocation ;
-  rdfs:label "Italy" ;
-.
-bdata:Mail
-  rdf:type bpaas:SupportChannel ;
-  rdfs:label "Mail" ;
-.
 bdata:MailJet
   rdf:type bpaas:CloudService ;
   bpaas:cloudServiceHasAPQC <http://ikm-group.ch/archimeo/apqc#9_2_2_2_Generate_customer_billing_data_10795> ;
@@ -385,7 +323,6 @@ bdata:MailJet
   bpaas:cloudServiceHasServiceSupport bpaas:Twenty4Seven ;
   bpaas:cloudServiceHasServiceSupportResponsiveness bpaas:at_most_1_working_day ;
   bpaas:cloudServiceHasSimultaneousUsers 100 ;
-  bpaas:cloudServiceHasStoredDataLocation bpaas:French ;
   bpaas:cloudServiceHasTargetMarket bpaas:Businesses ;
   rdfs:label "MailJet" ;
 .
@@ -406,7 +343,6 @@ bdata:Mathema_Document_Generator
   bpaas:cloudServiceHasServiceSupport bpaas:Mon-Fri ;
   bpaas:cloudServiceHasServiceSupportResponsiveness bpaas:at_most_4_hours ;
   bpaas:cloudServiceHasSimultaneousUsers 200 ;
-  bpaas:cloudServiceHasStoredDataLocation bpaas:Italy ;
   bpaas:cloudServiceHasTargetMarket bpaas:Businesses ;
   bpaas:cloudServiceHasTargetMarket bpaas:Individuals ;
   bpaas:cloudServiceHasTargetMarket bpaas:SchoolsAndUniversities ;
@@ -459,18 +395,6 @@ bdata:Ninja_email
   bpaas:cloudServiceHasTargetMarket bpaas:Businesses ;
   rdfs:label "Ninja e-mail System" ;
 .
-bdata:North_America
-  rdf:type bpaas:StoredDataLocation ;
-  rdfs:label "North America" ;
-.
-bdata:OnSiteSupport
-  rdf:type bpaas:SupportChannel ;
-  rdfs:label "On site support" ;
-.
-bdata:OnlineTicketing
-  rdf:type bpaas:SupportChannel ;
-  rdfs:label "Online Ticketing" ;
-.
 bdata:Open_Source_Billing
   rdf:type bpaas:CloudService ;
   bpaas:cloudServiceHasAPQC <http://ikm-group.ch/archimeo/apqc#9_2_2_2_Generate_customer_billing_data_10795> ;
@@ -489,24 +413,11 @@ bdata:Open_Source_Billing
   bpaas:cloudServiceHasServiceSupport bpaas:Mon-Fri ;
   bpaas:cloudServiceHasServiceSupportResponsiveness bpaas:at_most_4_hours ;
   bpaas:cloudServiceHasSimultaneousUsers 200 ;
-  bpaas:cloudServiceHasStoredDataLocation bpaas:USA ;
   bpaas:cloudServiceHasTargetMarket bpaas:Businesses ;
   bpaas:cloudServiceHasTargetMarket bpaas:Individuals ;
   bpaas:cloudServiceHasTargetMarket bpaas:SchoolsAndUniversities ;
   bpaas:cloudServiceHasTargetMarket bpaas:SmallTeams ;
   rdfs:label "Open Source Billing - Invoicing System" ;
-.
-bdata:Other
-  rdf:type bpaas:SupportChannel ;
-  rdfs:label "Other" ;
-.
-bdata:Phone
-  rdf:type bpaas:SupportChannel ;
-  rdfs:label "Phone" ;
-.
-bdata:Romania
-  rdf:type bpaas:StoredDataLocation ;
-  rdfs:label "Romania" ;
 .
 bdata:Simple_Invoices
   rdf:type bpaas:CloudService ;
@@ -526,38 +437,8 @@ bdata:Simple_Invoices
   bpaas:cloudServiceHasServiceSupport bpaas:Mon-Fri ;
   bpaas:cloudServiceHasServiceSupportResponsiveness bpaas:at_most_4_hours ;
   bpaas:cloudServiceHasSimultaneousUsers 30 ;
-  bpaas:cloudServiceHasStoredDataLocation bpaas:Germany ;
   bpaas:cloudServiceHasTargetMarket bpaas:Businesses ;
   rdfs:label "Simple Invoices - Invoicing System" ;
-.
-bdata:SocialMedia
-  rdf:type bpaas:SupportChannel ;
-  rdfs:label "Social Media" ;
-.
-bdata:South_America
-  rdf:type bpaas:StoredDataLocation ;
-  rdfs:label "South America" ;
-.
-bdata:SugarCRM
-  rdf:type bpaas:CloudService ;
-  bpaas:cloudServiceHasEncryptionType bpaas:Sha256 ;
-  rdfs:label "SugarCRM" ;
-.
-bdata:Switzerland
-  rdf:type bpaas:StoredDataLocation ;
-  rdfs:label "Switzerland" ;
-.
-bdata:The_Netherlands
-  rdf:type bpaas:StoredDataLocation ;
-  rdfs:label "The Netherlands" ;
-.
-bdata:USA
-  rdf:type bpaas:StoredDataLocation ;
-  rdfs:label "USA" ;
-.
-bdata:United_Kingdom
-  rdf:type bpaas:StoredDataLocation ;
-  rdfs:label "United Kingdom" ;
 .
 bdata:YMENS_CRM
   rdf:type bpaas:CloudService ;
@@ -579,7 +460,6 @@ bdata:YMENS_CRM
   bpaas:cloudServiceHasServiceSupport bpaas:Twenty4Seven ;
   bpaas:cloudServiceHasServiceSupportResponsiveness bpaas:at_most_2_hours ;
   bpaas:cloudServiceHasSimultaneousUsers 1000 ;
-  bpaas:cloudServiceHasStoredDataLocation bpaas:Romania ;
   bpaas:cloudServiceHasTargetMarket bpaas:Businesses ;
   bpaas:cloudServiceHasTargetMarket bpaas:SchoolsAndUniversities ;
   rdfs:label "YMENS CRM" ;
@@ -605,10 +485,6 @@ bdata:Zoho_CRM
   bpaas:cloudServiceHasServiceSupport bpaas:Mon-Fri ;
   bpaas:cloudServiceHasServiceSupportResponsiveness bpaas:at_most_2_hours ;
   bpaas:cloudServiceHasSimultaneousUsers 200 ;
-  bpaas:cloudServiceHasStoredDataLocation bpaas:USA ;
   bpaas:cloudServiceHasTargetMarket bpaas:Businesses ;
   rdfs:label "Zoho CRM" ;
-.
-bpaas:cloudServiceHasStoredDataLocation
-  rdfs:range bpaas:StoredDataLocation ;
 .
